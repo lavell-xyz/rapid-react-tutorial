@@ -32,7 +32,8 @@ it down into a set of components:
 
 * **Lists**, which contain sequences of Cards
 
-![List](images/list.png)
+<img src="images/list.png" width="566" height="491" />
+
 * **Boards**, which contain sequences of Lists
 
 ![Board](images/small-trello.png)
