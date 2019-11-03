@@ -121,8 +121,6 @@ potential in this little island of code.
 
 ### Checkpoint
 
-![app](images/app-2-1.png)
-
 Your code should now match this: <a href="https://link.lavell.xyz/rapid-react-dev-2-1" target="_blank">Step 2 - Checkpoint 1</a>
 
 _Feel free to just open from this checkpoint if you're having issues
@@ -201,7 +199,6 @@ expression, which outputs the value into the rendered HTML. Without the braces,
 all of the cards would just say _props.title_, rather than the actual text 
 passed into the function!
 
-![app broken](images/app-2-1-broken.png)
 
 ### Passing Props
 
