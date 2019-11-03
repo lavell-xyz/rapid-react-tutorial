@@ -32,11 +32,11 @@ it down into a set of components:
 
 * **Lists**, which contain sequences of Cards
 
-<img src="images/list.png" width="566" height="491" />
+<img src="images/list.png" width="276" height="173" />
 
 * **Boards**, which contain sequences of Lists
 
-![Board](images/small-trello.png)
+<img src="images/small-trello.png" width="566" height="491" />
   
 Simple structure, right? Trello has even
 more concepts, like **Users**, **Organizations**, and **Powerups** for
