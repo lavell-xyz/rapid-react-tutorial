@@ -3,25 +3,28 @@
 _This page is part of a <a href="https://link.lavell.xyz/rapid-react" target="_blank">Step-by-Step Tutorial</a> 
 to build a <a href="http://trello.com/" target="_blank">Trello</a> clone in <a href="http://reactjs.org/" target="_blank">React</a>._
 
-<a href="https://link.lavell.xyz/rapid-react-demo" target="_blank">![Screenshot](https://cdn.glitch.com/9b55720a-7f6b-424b-a446-dd41176b95bb%2Fscreen1?v=1572714737312)
-</a>
+<a href="https://link.lavell.xyz/rapid-react-demo" target="_blank">![Screenshot](images/demo.png)</a>
 
 <a href="https://link.lavell.xyz/rapid-react-demo" target="_blank">_Click here to run the Demo of the Complete Prototype_</a>
 
-## Pre-Requisites
+## Getting Started
 
-Make sure you've completed <a href="https://link.lavell.xyz/rapid-react-1" target="_blank">Step 1</a>, which will help you set up the work
-environment, and brush up on Javascript.
+Make sure you've completed <a href="https://link.lavell.xyz/rapid-react-1" target="_blank">Step 1</a>, which will explain how the development environments work, and help you brush up on Javascript / web technologies.
 
-## What is React?
+Open up the development environment for this step in a new tab/window, so you 
+can follow along in the code. Just reading isn't enough! You must _practice!_
 
-React is a JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called **components**. 
+<a href="https://link.lavell.xyz/rapid-react-dev-1" target="_blank">Step 1 Development Environment</a>
 
 ## Components
 
 When designing a program, it is helpful to break it down into modular units that fit
 together to make a greater whole. This is true not just in UIs, but across the 
-range of types of things a program might try to model.
+range of types of things a program might try to model. React's focus on components makes this concept easy to put into practice. 
 
-React's focus on components makes this concept easy to put into practice. In React,
-all you need to define a component, 
+To define a React Component, you need:
+
+* A set of parameters that get passed to the component, called **props**
+* A **render** method which tells React how to draw the component
+
+That's it! 
