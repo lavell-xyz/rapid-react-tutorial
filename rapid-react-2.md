@@ -28,7 +28,7 @@ it down into a set of components:
 
 * **Cards**, which contain the text for tasks
 
-![Card](images/card.png)
+<img src="images/card.png" width="264" height="65" />
 
 * **Lists**, which contain sequences of Cards
 
