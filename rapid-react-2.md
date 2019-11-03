@@ -98,7 +98,6 @@ Here's the full **App.js**:
 
 ```javascript
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Card from './Card.js';
 
@@ -120,6 +119,8 @@ Might not look like much, but there's a lot of flexibility and future
 potential in this little island of code. 
 
 ### Checkpoint
+
+![app](images/app-2-1.png)
 
 Your code should now match this: <a href="https://link.lavell.xyz/rapid-react-dev-2-1" target="_blank">Step 2 - Checkpoint 1</a>
 
@@ -153,19 +154,132 @@ function Card(props) {
 
 Notice anything _weird_ about this **Javascript** function? 
 
-If you're brushed up on your HTML/CSS/JS, you might notice that this
+If you've brushed up on your HTML/CSS/JS, you might notice that this
 function is mixing _Javascript_ syntax with _HTML_ syntax! What's going on here?
 
+### JSX
+
 This file isn't being interpreted as _just_ plain-old Javascript - it's 
-actually a superset of Javascript, called [JSX](https://reactjs.org/docs/introducing-jsx.html), which mashes up the concept
+actually an extension to Javascript, called [JSX](https://reactjs.org/docs/introducing-jsx.html) - which mashes up the concept
 of HTML templating with Javascript. The fundamental thought here is that 
 rendering logic is inherently coupled (i.e. _intertwined_) with other UI logic.
 Rather than separating the rendering logic into a separate file, [like some 
 other frameworks do with HTML templates](), everything is contained in one
 place.
 
+### Babel
+
 Under the hood, React is using something called [Babel](https://babeljs.io/) to
 _pre-compile_ the Javascript. Ultimately all of the JSX syntax gets turned into
 normal Javascript functions ([React.createElement](https://reactjs.org/docs/react-api.html#createelement), specifically), but you don't
 need to worry about that process too much at this point. It's good just to know 
 that it exists, and how to use JSX.
+
+### Defining Props
+
+As mentioned earlier, all you need to define a React Component is some **properties**
+and a **rendering function**. 
+
+```javascript
+function Card(props) {
+```
+
+The Card function takes in its props as an argument. 
+
+```javascript
+  return (
+    <div className="Card"> 
+      {props.title}
+    </div>
+  );
+```
+
+It then references the **title**, which it assumes has been passed in on the 
+**props** object. The curly braces around **props.title** turn it into a JSX
+expression, which outputs the value into the rendered HTML. Without the braces,
+all of the cards would just say _props.title_, rather than the actual text 
+passed into the function!
+
+![app broken](images/app-2-1-broken.png)
+
+### Passing Props
+
+So, our **Card** component knows how to render itself when passed in a **props**
+object with a title property. But where is that done, exactly?
+
+
+The App.js file imports the **Card** component from its own respective file:
+
+```javascript
+// App.js
+import Card from './Card.js';
+```
+
+We also require the Card.js file to *export* it's Card function:
+
+```javascript
+// Card.js
+export default Card;
+```
+
+Without that line, we will run into errors.
+
+From there, it uses JSX syntax to create a handful of cards.
+
+```javascript
+function App() {
+  return (
+    <div className="App">
+      <Card title="Learn to code" />
+      <Card title="Do a flip" />
+      <Card title="Go outside" />
+    </div>
+  );
+}
+```
+
+Let's look more closely at a Card-creating line:
+
+```html
+<Card title="Learn to code" />
+```
+
+This JSX creates a Card component, and passes the **title** string to it.
+This is what's referenced by the **props** in the Card function. Simple enough!
+We will cover more complicated property passing in later Tutorial Steps.
+
+### Where is the App Itself Created?
+
+You'll notice a pair of files, **index.html** and **index.js**.
+
+**index.html** is simple:
+
+```html
+<div id="root"></div>
+```
+
+**index.js** is slightly more complicated:
+
+```javascript
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
+
+ReactDOM.render(<App />, document.getElementById('root'));
+```
+
+The basic context is that the html is as simple as possible, and 
+just contains a unique ```<div>``` element called ```root```, which
+the **index.js** file _injects_ React into (by creating an instance
+of the **App**).
+
+You won't need to modify this section, but it's good to understand the
+basics of the plumbing!
+
+## All Set!
+
+Good work! This step was fundamental to your understanding of React.
+We covered a lot of ground. Take a break, and when you're ready, head
+on over to <a href="https://link.lavell.xyz/rapid-react-3" target="_blank">Step 3</a>, where we'll start styling things and making our
+little prototype look more like Trello!
