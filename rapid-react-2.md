@@ -11,12 +11,9 @@ to build a <a href="http://trello.com/" target="_blank">Trello</a> clone in <a h
 
 Make sure you've completed <a href="https://link.lavell.xyz/rapid-react-1" target="_blank">Step 1</a>, which will explain how the development environments work, and help you brush up on Javascript / web technologies.
 
-Open up the development environment for this step in a new tab/window, so you 
-can follow along in the code. Just reading isn't enough! You must _practice!_
+Open in a new tab/window: <a href="https://link.lavell.xyz/rapid-react-dev-2" target="_blank">Step 2 Development Environment</a>
 
-<a href="https://link.lavell.xyz/rapid-react-dev-1" target="_blank">Step 1 Development Environment</a>
-
-## Components
+## What is a Component?
 
 When designing a program, it is helpful to break it down into modular units that fit
 together to make a greater whole. This is true not just in UIs, but across the 
@@ -27,4 +24,11 @@ To define a React Component, you need:
 * A set of parameters that get passed to the component, called **props**
 * A **render** method which tells React how to draw the component
 
-That's it! 
+Components can be defined as **classes** or **functions**. For now, we are
+going to define our components as functions, as that is the simplest possible
+form!
+
+### Breaking Trello into Components
+
+
+
