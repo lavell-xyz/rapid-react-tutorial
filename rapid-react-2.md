@@ -47,8 +47,9 @@ a prototype, not a full-fledged product!
 
 To define a React Component, you need:
 
-* A set of parameters that get passed to the component, called **props**
-* A **render** method which tells React how to draw the component
+* A set of parameters that get passed to the component, called **props** 
+(i.e. properties)
+* A **render** function which tells React how to draw the component
 
 Components can be defined as **classes** or **functions**. For now, we are
 going to define our components as functions, as that is the simplest possible
