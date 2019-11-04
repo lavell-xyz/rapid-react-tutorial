@@ -262,7 +262,6 @@ You'll notice a pair of files, **index.html** and **index.js**.
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 ```
