@@ -65,7 +65,7 @@ import React from 'react';
 
 function Card(props) {
   return (
-    <div className="Card"> 
+    <div> 
       {props.title}
     </div>
   );
@@ -144,7 +144,7 @@ Let's look at the Card function itself:
 ```javascript
 function Card(props) {
   return (
-    <div className="Card"> 
+    <div> 
       {props.title}
     </div>
   );
@@ -187,7 +187,7 @@ The Card function takes in its props as an argument.
 
 ```javascript
   return (
-    <div className="Card"> 
+    <div> 
       {props.title}
     </div>
   );
