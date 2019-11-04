@@ -12,7 +12,7 @@ Welcome to this step-by-step tutorial to build a <a href="http://trello.com/" ta
 * <a href="https://link.lavell.xyz/rapid-react-1" target="_blank">Step 1 - Setting Up</a>
 * <a href="https://link.lavell.xyz/rapid-react-2" target="_blank">Step 2 - Introduction to Components</a>
 * <a href="https://link.lavell.xyz/rapid-react-2" target="_blank">Step 3 - Styling with CSS</a>
-
+* Step 4 - Bringing it all together
 
 
 
