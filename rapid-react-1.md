@@ -27,16 +27,35 @@ React is a JavaScript library for building user interfaces. It lets you
 
  ## Pre-Requisites
 
+### Web Development
+
 Having a working knowledge of HTML, CSS and JS will definitely help
-you get going on this tutorial. 
+you get going on this tutorial. There are **so** many introductory
+resources out there, of varying quality - it can be hard to cut
+through the noise.
 
-Most essential perhaps, is just a basic 
-working knowledge of how programs operate - i.e. what is a function,
-what is a variable, etc. 
+I highly recommend [Learn to Code HTML and CSS by Shay Howe](https://learn.shayhowe.com/html-css/).
+It covers the basics in an accessible manner, and goes on to 
+more advanced topics as well.
 
-You will be guided step-by-step in this tutorial, with plenty of 
-checkpoints and guides. So even with a bare minimum of pre-existing
-knowledge, you should be able to jumble your way through. 
+### Basic Programming Knowledge
+
+Also required is a basic working knowledge of how programs operate - 
+i.e. what is a function, what is a variable, etc. 
+
+I've tried to make this tutorial as accessible as possible, even to 
+complete bbeginners, but I recognize a need for an even more basic 
+pre-reqs tutorial for those just starting. Possibly in the future I will
+make that as well! 
+
+## Checkpoints
+
+Each step will contain links to multiple "Checkpoints", which are 
+self-contained development environments that allow you to edit and 
+run the code, right in your browser. Each checkpoint will contain the
+code up to that point in the tutorial - so, if you're following along,
+you can make sure your coding matches up to mine. Or, if you get lost,
+just start from that most recent checkpoint, and you'll be fine!
 
 ## Development Tool
 
@@ -54,15 +73,6 @@ the live-reloading result of your React endeavors.
 </a>
 
 [Try poking around the Development Environment for the Completed Prototype](https://link.lavell.xyz/rapid-react-dev-final)
-
-## Checkpoints
-
-Each step will contain links to multiple "Checkpoints", which are 
-self-contained development environments that allow you to edit and 
-run the code, right in your browser. Each checkpoint will contain the
-code up to that point in the tutorial - so, if you're following along,
-you can make sure your coding matches up to mine. Or, if you get lost,
-just start from that most recent checkpoint, and you'll be fine!
 
 ## You're Good to Go!
 
