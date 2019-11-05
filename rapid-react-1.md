@@ -44,7 +44,7 @@ Also required is a basic working knowledge of how programs operate -
 i.e. what is a function, what is a variable, etc. 
 
 I've tried to make this tutorial as accessible as possible, even to 
-complete bbeginners, but I recognize a need for an even more basic 
+complete beginners, but I recognize a need for an even more basic 
 pre-reqs tutorial for those just starting. Possibly in the future I will
 make that as well! 
 
