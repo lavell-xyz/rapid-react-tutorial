@@ -334,14 +334,14 @@ mentioning they are part of the same list.
 
 You may also notice that it introduces an extra piece of UI - the
 bullet points for each list item. We will get rid of those in the next
-section, Styling with CSS.
+step, <a href="https://link.lavell.xyz/rapid-react-3" target="_blank">Styling with CSS</a>.
 
 ### Checkpoint
 
 <a href="https://link.lavell.xyz/rapid-react-2-2" target="_blank">Step 2 - Checkpoint 2</a>
 
 
-## Where is the App Itself Created?
+## Sidenote: Where is the App Itself Created?
 
 You'll notice a pair of files, **index.html** and **index.js**.
 
@@ -361,7 +361,7 @@ import App from './App';
 ReactDOM.render(<App />, document.getElementById('root'));
 ```
 
-The basic context is that the html is as simple as possible, and 
+The html is as simple as possible, and 
 just contains a unique ```<div>``` element called ```root```, which
 the **index.js** file _injects_ React into (by creating an instance
 of the **App**).
@@ -373,5 +373,5 @@ basics of the plumbing!
 
 Good work! This step was fundamental to your understanding of React.
 We covered a lot of ground. Take a break, and when you're ready, head
-on over to <a href="https://link.lavell.xyz/rapid-react-3" target="_blank">Step 3</a>, where we'll start styling things and making our
+on over to <a href="https://link.lavell.xyz/rapid-react-3" target="_blank">Step 3 - Styling with CSS</a>, where we'll start styling things and making our
 little prototype look more like Trello!
