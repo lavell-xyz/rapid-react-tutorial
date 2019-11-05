@@ -51,10 +51,4 @@ I'm using the Hex value from one of Trello's (limited) color options.
 Setting the background color to grey will allow us to see more clearly
 what we're doing with the Card and List styling.
 
-
-
-
-
-
-
-
+## More to come...
