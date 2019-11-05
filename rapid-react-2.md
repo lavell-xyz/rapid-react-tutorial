@@ -13,7 +13,7 @@ Make sure you've completed <a href="https://link.lavell.xyz/rapid-react-1" targe
 
 ## Follow Along in Code
 
-<a href="https://link.lavell.xyz/rapid-react-dev-2" target="_blank">Step 2 Development Environment</a>
+<a href="https://link.lavell.xyz/rapid-react-2-0" target="_blank">Step 2 Development Environment</a>
 
 ## What is a Component?
 
@@ -57,7 +57,7 @@ form!
 
 ### Card.js
 
-If you haven't already, open up the <a href="https://link.lavell.xyz/rapid-react-dev-2" target="_blank">Development Environment</a>. Mouse
+If you haven't already, open up the <a href="https://link.lavell.xyz/rapid-react-2-0" target="_blank">Development Environment</a>. Mouse
 over the _Files_ pane on the left-hand side, and click _New File_. Name
 it **Card.js**, and type in the following code: 
 
@@ -122,7 +122,7 @@ potential in this little island of code.
 
 ### Checkpoint
 
-Your code should now match this: <a href="https://link.lavell.xyz/rapid-react-dev-2-1" target="_blank">Step 2 - Checkpoint 1</a>
+Your code should now match this: <a href="https://link.lavell.xyz/rapid-react-2-1" target="_blank">Step 2 - Checkpoint 1</a>
 
 _Feel free to just open from this checkpoint if you're having issues
 getting the code running and don't want to get stuck debugging right now._
@@ -245,9 +245,103 @@ Let's look more closely at a Card-creating line:
 
 This JSX creates a Card component, and passes the **title** string to it.
 This is what's referenced by the **props** in the Card function. Simple enough!
-We will cover more complicated property passing in later Tutorial Steps.
 
-### Where is the App Itself Created?
+## The List Component
+
+So far, we've implemented _one_ of the _three_ core components we identified
+in the Trello breakdown - the **Card**. We have approximated the 
+functionality of the next component, the **List**, by simply stacking
+the Cards one on top of another in the main App div.
+
+Let's go one step further, and create our *List* component.
+
+New File > List.js
+
+```javascript
+import React from 'react';
+import Card from './Card.js';
+
+function List(props) {
+  return (
+    <div> 
+      <h1>{props.title}</h1>
+      <ul>
+        <li><Card title="Learn to code" /></li>
+        <li><Card title="Go outside" /></li>
+        <li><Card title="Do a flip" /></li>
+      </ul>
+    </div>
+  );
+}
+
+export default List;
+```
+
+And edit App.js:
+
+```javascript
+import React from 'react';
+import './App.css';
+import List from './List.js';
+
+function App() {
+  return (
+    <div className="App">
+      <List title="Todo" />
+    </div>
+  );
+}
+
+export default App;
+```
+
+You see how we moved the Card creation out of App and into the List.
+Hence, we have to import Card into List.js, and List into App.js.
+App.js no longer has to import Card directly.
+
+Lists all have titles in trello, hence passing in the title when
+we create the list:
+
+```javascript
+// App.js
+<List title="Todo" />
+```
+
+and rendering it in List.js:
+
+```javascript
+function List(props) {
+  return (
+    <div> 
+      <h1>{props.title}</h1>
+      ...
+```
+
+You'll notice that we've introduced the ```<ul>``` and ```<li>``` tags
+into the equation, as well.
+
+```html
+ <ul>
+  <li><Card title="Learn to code" /></li>
+  <li><Card title="Go outside" /></li>
+  <li><Card title="Do a flip" /></li>
+</ul>
+```
+
+UL stands for **Unordered List** in HTML. This more accurately represents
+the data structure than simply stacking the Cards without specifically
+mentioning they are part of the same list.
+
+You may also notice that it introduces an extra piece of UI - the
+bullet points for each list item. We will get rid of those in the next
+section, Styling with CSS.
+
+### Checkpoint
+
+<a href="https://link.lavell.xyz/rapid-react-2-2" target="_blank">Step 2 - Checkpoint 2</a>
+
+
+## Where is the App Itself Created?
 
 You'll notice a pair of files, **index.html** and **index.js**.
 
